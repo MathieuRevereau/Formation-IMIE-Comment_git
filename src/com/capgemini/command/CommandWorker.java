@@ -13,4 +13,15 @@ public class CommandWorker {
 		int result = this.commandList.indexOf(command);
 		return result;
 	}
+	
+	public Command getNext(Command currentCommand) {
+		Command nextCommand;
+		if (getCurrentIndex(currentCommand)+1<=commandList.size()) {
+			nextCommand = commandList.get(getCurrentIndex(currentCommand)+1);	
+		}
+		else {
+			nextCommand = commandList.get(0);
+		}
+		return nextCommand;
+	}
 } 
