@@ -77,3 +77,9 @@ local.properties
 .cache-main
 .scala_dependencies
 .worksheet
+/bin1/
+
+
+# exception with commit
+.classpath
+.project
